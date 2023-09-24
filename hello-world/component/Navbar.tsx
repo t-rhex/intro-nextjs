@@ -1,9 +1,7 @@
-import Link from 'next/link'
-import React, { useState } from 'react'
+import Link from "next/link";
 
-const Navbar = () => {
-  return (
-    <header className="bg-blue-500 text-white py-4">
+const Navbar: React.FC = () => (
+  <header className="bg-blue-500 text-white py-4">
     <div className="container mx-auto flex items-center justify-between">
       <Link href="/">
         {/* Use a div or a span instead of an anchor */}
@@ -26,7 +24,6 @@ const Navbar = () => {
       </nav>
     </div>
   </header>
-  )
-}
+);
 
-export default Navbar
+export default Navbar;
